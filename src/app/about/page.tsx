@@ -12,10 +12,12 @@ export default function About() {
           <h1>
             Lou Vang <span className="pronouns">(she/her)</span>
           </h1>
-          <div className="pronunciation">(rhymes with "you rang?")</div>
+          <div className="pronunciation">
+            (rhymes with &quote;you rang?&quote;)
+          </div>
 
           <div className="about__lead">
-            Hi! I'm a front-end developer with UI design capabilities.
+            Hi! I&apos;m a front-end developer with UI design capabilities.
           </div>
 
           <p>
@@ -25,15 +27,15 @@ export default function About() {
           </p>
 
           <p>
-            I'm a big believer in strong, functional design that utilizes proper
-            white space and visual hierarchy to guide users where they need to
-            be.
+            I&apos;m a big believer in strong, functional design that utilizes
+            proper white space and visual hierarchy to guide users where they
+            need to be.
           </p>
 
           <p>
             I started my journey with web development and design in 2006 and
             went to school with the sole ambition to become a web designer.
-            Since then, I've been a front-end developer for e-commerce. I
+            Since then, I&apos;ve been a front-end developer for e-commerce. I
             eventually started my own business designing planners from 2014-2020
             before transitioning back into web development.
           </p>

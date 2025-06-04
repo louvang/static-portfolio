@@ -65,16 +65,18 @@ export default function DogTrainingSitePage() {
           <>
             <Arrow
               left
-              onClick={(e: any) =>
-                e.stopPropagation() || instanceRef.current?.prev()
-              }
+              onClick={(e: React.MouseEvent<SVGSVGElement>) => {
+                e.stopPropagation();
+                instanceRef.current?.prev();
+              }}
               disabled={currentSlide === 0}
             />
 
             <Arrow
-              onClick={(e: any) =>
-                e.stopPropagation() || instanceRef.current?.next()
-              }
+              onClick={(e: React.MouseEvent<SVGSVGElement>) => {
+                e.stopPropagation();
+                instanceRef.current?.next();
+              }}
               disabled={
                 currentSlide ===
                 instanceRef.current.track.details.slides.length - 1
@@ -103,10 +105,10 @@ export default function DogTrainingSitePage() {
 
       <div className="single-work-info py-8 px-20">
         <p>
-          I've been working with Leerburg for several years as a Front-end
+          I&apos;ve been working with Leerburg for several years as a Front-end
           Developer, designing user interfaces alongside with developing
-          front-end code. I've optimized and modernized the user experience to
-          increase sale conversions.
+          front-end code. I&apos;ve optimized and modernized the user experience
+          to increase sale conversions.
         </p>
       </div>
     </div>
@@ -116,7 +118,7 @@ export default function DogTrainingSitePage() {
 function Arrow(props: {
   disabled: boolean;
   left?: boolean;
-  onClick: (e: any) => void;
+  onClick: (e: React.MouseEvent<SVGSVGElement>) => void;
 }) {
   const disabled = props.disabled ? ' arrow--disabled' : '';
   return (

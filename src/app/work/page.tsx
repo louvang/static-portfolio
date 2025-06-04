@@ -121,8 +121,8 @@ export default function Work() {
 
                   <div className="portfolio-desc">
                     Working with Bookmobile, a book printing shop loacted in the
-                    Twin Cities area to create Ruskerville's signature hardcover
-                    weekly and daily planners.
+                    Twin Cities area to create Ruskerville&apos;s signature
+                    hardcover weekly and daily planners.
                   </div>
                 </div>
 

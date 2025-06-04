@@ -48,16 +48,18 @@ export default function NewsletterCreatorPage() {
           <>
             <Arrow
               left
-              onClick={(e: any) =>
-                e.stopPropagation() || instanceRef.current?.prev()
-              }
+              onClick={(e: React.MouseEvent<SVGSVGElement>) => {
+                e.stopPropagation();
+                instanceRef.current?.prev();
+              }}
               disabled={currentSlide === 0}
             />
 
             <Arrow
-              onClick={(e: any) =>
-                e.stopPropagation() || instanceRef.current?.next()
-              }
+              onClick={(e: React.MouseEvent<SVGSVGElement>) => {
+                e.stopPropagation();
+                instanceRef.current?.next();
+              }}
               disabled={
                 currentSlide ===
                 instanceRef.current.track.details.slides.length - 1
@@ -86,12 +88,13 @@ export default function NewsletterCreatorPage() {
 
       <div className="single-work-info py-8 px-20">
         <p>
-          To streamline the creation of newsletters for individuals who aren't
-          closely acquainted with HTML and CSS, I designed and developed a
-          Newsletter Creator using React. Users can select a component template
-          and enter data into several input fields to create a newsletter. Once
-          the newsletter is complete, the user can generate an email-compatible
-          code that can be used to send out to a mailing list.
+          To streamline the creation of newsletters for individuals who
+          aren&apos;t closely acquainted with HTML and CSS, I designed and
+          developed a Newsletter Creator using React. Users can select a
+          component template and enter data into several input fields to create
+          a newsletter. Once the newsletter is complete, the user can generate
+          an email-compatible code that can be used to send out to a mailing
+          list.
         </p>
       </div>
     </div>
@@ -101,7 +104,7 @@ export default function NewsletterCreatorPage() {
 function Arrow(props: {
   disabled: boolean;
   left?: boolean;
-  onClick: (e: any) => void;
+  onClick: (e: React.MouseEvent<SVGSVGElement>) => void;
 }) {
   const disabled = props.disabled ? ' arrow--disabled' : '';
   return (

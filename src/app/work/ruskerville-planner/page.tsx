@@ -54,16 +54,18 @@ export default function RuskervillePlannerPage() {
           <>
             <Arrow
               left
-              onClick={(e: any) =>
-                e.stopPropagation() || instanceRef.current?.prev()
-              }
+              onClick={(e: React.MouseEvent<SVGSVGElement>) => {
+                e.stopPropagation();
+                instanceRef.current?.prev();
+              }}
               disabled={currentSlide === 0}
             />
 
             <Arrow
-              onClick={(e: any) =>
-                e.stopPropagation() || instanceRef.current?.next()
-              }
+              onClick={(e: React.MouseEvent<SVGSVGElement>) => {
+                e.stopPropagation();
+                instanceRef.current?.next();
+              }}
               disabled={
                 currentSlide ===
                 instanceRef.current.track.details.slides.length - 1
@@ -108,7 +110,7 @@ export default function RuskervillePlannerPage() {
           Bookmobile was accustomed to printing art books and novels but my
           project was uniquely a planner. There were some hurdles to jump
           through with the print press, especially with printing thin lines. To
-          offset the printer's inability to print thin lines, I ended up
+          offset the printer&apos;s inability to print thin lines, I ended up
           lightening those lines so that it remained clear which areas belonged
           where. After that, things moved on without any other hitches and the
           planners came out beautifully!
@@ -121,7 +123,7 @@ export default function RuskervillePlannerPage() {
 function Arrow(props: {
   disabled: boolean;
   left?: boolean;
-  onClick: (e: any) => void;
+  onClick: (e: React.MouseEvent<SVGSVGElement>) => void;
 }) {
   const disabled = props.disabled ? ' arrow--disabled' : '';
   return (

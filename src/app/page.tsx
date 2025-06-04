@@ -64,7 +64,7 @@ export default function Home() {
         </div>
         <div className="get-in-touch__msg-container">
           <div className="get-in-touch__msg">
-            Let's get in touch! you can{' '}
+            Let&apos;s get in touch! you can{' '}
             <Link href="/contact" className="underline">
               send me an email
             </Link>{' '}
