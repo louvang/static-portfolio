@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function About() {
   return (
-    <div className="page-minheight flex justify-center py-12 px-20">
+    <div className="about-page page-minheight flex justify-center py-12 px-20">
       <div className="about about-container">
         <div className="about__left-col">
           <img src="images/portrait.jpg" alt="Lou Vang" className="portrait" />
@@ -47,7 +47,7 @@ export default function About() {
           </p>
 
           <div className="about__info sm-nav__links">
-            <div>
+            <div className="sm-nav__contact-btn-container">
               <Link href="/contact" className="sm-nav__contact-btn">
                 Contact me
               </Link>

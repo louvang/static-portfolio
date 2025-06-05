@@ -72,6 +72,11 @@ body {
   margin-right: 1rem;
 }
 
+.intro-content-container {
+  margin-top: 8rem;
+  margin-bottom: 9rem;
+}
+
 .intro-content {
   line-height: 120%;
   font-size: 5.75rem;
@@ -219,7 +224,7 @@ body {
 }
 
 .homepage-minheight {
-  min-height: calc(100vh - 98px);
+  min-height: calc(100vh - 98px - 108.5px - 287px);
 }
 
 .coming-soon__heading-row {
@@ -730,6 +735,10 @@ body {
   .about h1 {
     margin-top: 0;
   }
+
+  .single-work-info {
+    padding-top: 1rem;
+  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -749,6 +758,12 @@ body {
 
   .intro-content--dt {
     display: none;
+  }
+
+  .footer-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    flex-wrap: wrap;
   }
 }
 
@@ -772,12 +787,153 @@ body {
 
   .layout-header,
   .single-work-container,
-  .single-work-info {
+  .single-work-info,
+  .about-page {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 
   .portfolio-list-container {
     padding: 2rem;
+  }
+
+  .copyright-line {
+    width: 100%;
+  }
+
+  .bottom-nav {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header-container {
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .logo {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+
+  .top-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .top-nav ul {
+    max-width: 100%;
+  }
+
+  .top-nav-item {
+    text-transform: uppercase;
+  }
+
+  .top-nav-item a {
+    padding: 0.25rem 0.75rem 0.325rem;
+  }
+
+  .get-in-touch {
+    padding: 2rem;
+  }
+
+  .single-work-info p {
+    font-size: 1.25rem;
+    line-height: 140%;
+  }
+
+  .sm-nav__links {
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  .sm-nav__links div {
+    width: 100%;
+  }
+
+  .sm-nav__contact-btn-container {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .get-in-touch__heading {
+    font-size: 2rem;
+  }
+
+  .get-in-touch__msg {
+    font-size: 1.125rem;
+  }
+
+  .get-in-touch__link {
+    font-size: 1rem;
+  }
+
+  .get-in-touch__link-icon {
+    width: 20px;
+  }
+
+  .layout-header,
+  .single-work-container,
+  .single-work-info,
+  .portfolio-list-container,
+  .about-page {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .intro-h1 {
+    font-size: 4rem;
+  }
+
+  .intro-content--mobile {
+    font-size: 2.5rem;
+  }
+
+  .about-page {
+    padding-top: 2rem;
+  }
+
+  .portrait {
+    max-width: 80%;
+  }
+
+  .about {
+    gap: 1.5rem;
+  }
+
+  .about h1 {
+    font-size: 3rem;
+  }
+
+  .pronouns {
+    font-size: 2.5rem;
+  }
+
+  .about__lead {
+    font-size: 1.75rem;
+  }
+
+  .about p {
+    font-size: 1.25rem;
+    line-height: 140%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .top-nav-list,
+  .bottom-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .bottom-nav-list {
+    width: 100%;
   }
 }

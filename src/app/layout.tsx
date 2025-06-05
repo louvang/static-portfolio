@@ -20,7 +20,7 @@ export default function RootLayout({
       </head>
       <body className={`antialiased`}>
         <header className="layout-header w-full px-20">
-          <div className="py-7 flex justify-between items-center border-b">
+          <div className="header-container py-7 flex justify-between items-center border-b">
             <Link href="/" className="logo font-serif text-4xl">
               Lou Vang
             </Link>
@@ -31,12 +31,12 @@ export default function RootLayout({
         </header>
         <main>{children}</main>
         <footer className="layout-footer w-full">
-          <div className="px-20 py-10 flex justify-between items-center text-lg">
+          <div className="footer-container px-20 py-10 flex justify-between items-center text-lg">
             <div className="copyright-line">
               &copy; 2025 Lou Vang. All rights reserved.
             </div>
             <nav className="bottom-nav">
-              <ul className="list-none flex justify-between w-[280px]">
+              <ul className="bottom-nav-list list-none flex justify-between w-[280px]">
                 <li className="bottom-nav-item">
                   <Link href="/">Home</Link>
                 </li>
